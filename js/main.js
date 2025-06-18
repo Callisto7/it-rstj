@@ -47,5 +47,13 @@
         1920: { items: 1 },
       },
     });
+    const track = document.querySelector(".carousel-track");
+    const items = document.querySelectorAll(".item");
+
+    if (track && items.length) {
+      items.forEach((item) => {
+        track.appendChild(item.cloneNode(true));
+      });
+    }
   });
 })(jQuery);

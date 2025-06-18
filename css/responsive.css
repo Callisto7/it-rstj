@@ -12,9 +12,6 @@
   .why .content h3 {
     font-size: 30px;
   }
-  .counter-box {
-    margin-bottom: 30px;
-  }
   .container-fluid {
     padding-left: 16px;
     padding-right: 16px;
@@ -29,9 +26,6 @@
   }
   .services-item .services-content h3 a {
     font-size: 14px;
-  }
-  .services-item {
-    margin-bottom: 20px;
   }
   #pricing-table .title h3 {
     font-size: 14px;
@@ -286,6 +280,26 @@
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+  }
+
+  .service-content {
+    flex-direction: column;
+  }
+
+  .services-text p {
+    font-size: 22px;
+    max-width: 336px;
+  }
+
+  .service-items {
+    gap: 33px;
+  }
+  .services-item {
+    width: 100%;
+  }
+
+  .services-padding {
+    padding: 90px 0 90px;
   }
 }
 
