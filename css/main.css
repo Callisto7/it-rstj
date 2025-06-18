@@ -112,7 +112,6 @@ a:not([href]):not([tabindex]) {
 .btn:active {
   box-shadow: none;
   outline: none;
-  color: #fff;
 }
 
 .btn-collback {
