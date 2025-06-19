@@ -252,8 +252,8 @@ hr {
   display: table-cell;
 }
 
-/* Services Item */
-.services-item {
+/* Achievements Item */
+.achievements-item {
   background: #fff;
   padding: 32px 24px;
   border-radius: 20px;
@@ -262,13 +262,13 @@ hr {
   width: 400px;
 }
 
-.service-content {
+.achievement-content {
   display: flex;
   justify-content: center;
   gap: 24px;
 }
 
-.services-text p {
+.achievements-text p {
   font-size: 32px;
   max-width: 1008px;
 }
@@ -279,40 +279,40 @@ hr {
   right: 0;
 }
 
-.services-text {
+.achievements-text {
   display: flex;
   justify-content: center;
 }
 
-.services-item h3 {
+.achievements-item h3 {
   font-size: 80px;
   font-weight: 700;
   margin-bottom: 0;
 }
 
-.service-items {
+.achievements-items {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-.services-content {
+.achievements-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.services-item p {
+.achievements-item p {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 0;
 }
 
-.services-padding {
+.achievements-padding {
   padding: 150px 0 150px;
 }
 
-#service {
+#achievements {
   position: relative;
 }
 
@@ -847,3 +847,5 @@ textarea {
   justify-content: center;
   align-items: center;
 }
+
+
