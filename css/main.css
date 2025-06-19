@@ -685,11 +685,6 @@ textarea {
   max-width: 684px;
 }
 
-.items-cases {
-  display: flex;
-  gap: 24px;
-}
-
 .container-cases {
   display: flex;
   flex-direction: column;

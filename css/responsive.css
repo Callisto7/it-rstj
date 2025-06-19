@@ -34,6 +34,10 @@
   .services-content p {
     max-width: 350px;
   }
+
+  .images-cases {
+    height: 200px;
+  }
 }
 
 /* tablets */
@@ -70,6 +74,13 @@
   .services-content h3,
   .services-content p {
     max-width: 350px;
+  }
+  .images-cases {
+    height: fit-content;
+  }
+
+  .images-cases img {
+    height: 200px;
   }
 }
 
