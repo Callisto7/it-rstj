@@ -817,3 +817,115 @@ textarea {
   pointer-events: all;
   cursor: pointer;
 }
+
+.technology-padding {
+  padding: 56px;
+}
+
+.technology-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.technology-header h3 {
+  font-size: 46px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.technology-header p {
+  font-size: 28px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.technology-items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.accordion-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.accordion-body .tech-tags:last-of-type {
+  padding-bottom: 16px;
+}
+
+
+.accordion-body.open {
+  max-height: 600px; /* можно больше, если внутри много текста */
+}
+.accordion-header {
+  cursor: pointer;
+  position: relative;
+  padding: 16px 0;
+  font-size: 32px;
+  border-top: 1px solid #ddd;
+}
+
+.technology-item:last-child .accordion-header {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background-image: url("../img/accordion-arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 0.6s ease;
+}
+.accordion-header.active::after {
+  transform: rotate(180deg);
+}
+
+.tech-block h4 {
+  font-size: 18px;
+  color: #5f5f5f;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.tech-tags span {
+  border: 1px solid #101010;
+  padding: 0 14px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.technology-button a{
+  gap: 10px;
+  padding: 16px 24px;
+  color: #fff;
+  background: #101010;
+  border-radius: 12px;
+  border: none;
+}
+
+.technology-button {
+  display: flex;
+  justify-content: center;
+}

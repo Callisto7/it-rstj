@@ -21,12 +21,10 @@
 
     $(".navbar-toggler").on("click", function () {
       var $menu = $("#navbarCollapse");
-
       $menu.css("display", "block");
     });
 
-    /* Testimonials Carousel 
-    ========================================================*/
+
     var owl = $(".owl-carousel");
     owl.owlCarousel({
       loop: true,
@@ -39,14 +37,10 @@
       autoplay: false,
       responsiveClass: true,
       responsiveRefreshRate: true,
-      // navText: [
-      //   '<img src="img/arrow-slider.svg" alt="prev">',
-      //   '<img src="img/arrow-slider.svg" alt="next">',
-      // ],
       responsive: {
         0: {
           items: 1,
-          stagePadding: 60
+          stagePadding: 60,
         },
         640: {
           items: 1,
@@ -65,11 +59,32 @@
 
     const track = document.querySelector(".carousel-track");
     const items = document.querySelectorAll(".item");
-
     if (track && items.length) {
       items.forEach((item) => {
         track.appendChild(item.cloneNode(true));
       });
     }
+
+    const $accordionHeaders = $(".accordion-header");
+    const $accordionBodies = $(".accordion-body");
+
+    $accordionHeaders.on("click", function () {
+      const $this = $(this);
+      const index = $this.data("index");
+
+      $accordionHeaders.each(function (i) {
+        const $header = $(this);
+        const $body = $accordionBodies.eq(i);
+
+        if (i === index) {
+          const isOpen = $body.hasClass("open");
+          $body.toggleClass("open", !isOpen);
+          $header.toggleClass("active", !isOpen);
+        } else {
+          $body.removeClass("open");
+          $header.removeClass("active");
+        }
+      });
+    });
   });
 })(jQuery);
