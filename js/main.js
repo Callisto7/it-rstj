@@ -31,17 +31,22 @@
     owl.owlCarousel({
       loop: true,
       nav: false,
-      dots: true,
-      center: false,
+      dots: false,
+      center: true,
       margin: 24,
       slideSpeed: 8000,
       stopOnHover: true,
-      autoplay: true,
+      autoplay: false,
       responsiveClass: true,
       responsiveRefreshRate: true,
+      // navText: [
+      //   '<img src="img/arrow-slider.svg" alt="prev">',
+      //   '<img src="img/arrow-slider.svg" alt="next">',
+      // ],
       responsive: {
         0: {
           items: 1,
+          stagePadding: 60
         },
         640: {
           items: 1,

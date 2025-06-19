@@ -665,6 +665,9 @@ textarea {
   border-radius: 100px;
   padding: 100px 56px;
   background: #002a6f;
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
 }
 
 .section-title h2 {
@@ -676,19 +679,13 @@ textarea {
 .container-cases .section-title {
   align-items: center;
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .section-title p {
   font-size: 28px;
   color: #fff;
   max-width: 684px;
-}
-
-.container-cases {
-  display: flex;
-  flex-direction: column;
-  gap: 56px;
 }
 
 .cases-button {
@@ -698,18 +695,23 @@ textarea {
 
 .images-cases {
   border-radius: 20px;
-  height: 300px;
 }
 
-.images-cases img {
+.img-gallery {
+  height: 300px;
+  max-height: 380px;
   border-radius: 20px;
+  object-fit: cover;
+}
+
+.owl-carousel {
+  padding-left: 0; /* или можно вручную через media-запросы */
 }
 
 .case-item {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  height: fit-content;
 }
 
 .case-item h3 {
@@ -729,12 +731,6 @@ textarea {
   background: #fff;
   border-radius: 12px;
   border: none;
-}
-
-.rostjob-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .services-padding {
@@ -800,4 +796,24 @@ textarea {
 .services-item img {
   width: 48px;
   height: 48px;
+}
+
+.owl-nav {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  pointer-events: none; /* чтобы клики шли только на стрелки */
+}
+
+.owl-nav button {
+  background: black !important;
+  border-radius: 20px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  pointer-events: all;
+  cursor: pointer;
 }
