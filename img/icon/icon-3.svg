@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="32" y="32" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="32" y="4" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="4" y="4" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="4" y="32" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M31.875 10L17 10" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.625 24.8751L23.5715 29.5715L30.4286 21" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 17L38 31.875" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 17L10 31.875" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.875 38L17 38" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 38L41.5 34.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M38 10L41.5 6.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M10 10L13.5 6.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M10 38L13.5 34.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+</svg>

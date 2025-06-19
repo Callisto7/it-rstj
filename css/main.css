@@ -22,9 +22,10 @@ h2,
 h3,
 h4 {
   font-size: 38px;
-  color: #222222;
+  color: #101010;
   font-weight: 700;
   font-family: "Inter", sans-serif;
+  margin-bottom: 0;
 }
 
 a {
@@ -45,7 +46,7 @@ a a:focus {
 p {
   font-weight: 400;
   font-family: "Inter", sans-serif;
-  margin: 0px;
+  margin: 0;
   font-size: 14px;
   color: #101010;
   line-height: normal;
@@ -79,9 +80,7 @@ a:not([href]):not([tabindex]) {
 
 .section-title {
   font-size: 30px;
-  color: #222222;
   display: inline-block;
-  font-weight: 700;
   position: relative;
 }
 
@@ -286,8 +285,6 @@ hr {
 
 .achievements-item h3 {
   font-size: 80px;
-  font-weight: 700;
-  margin-bottom: 0;
 }
 
 .achievements-items {
@@ -305,7 +302,6 @@ hr {
 .achievements-item p {
   font-size: 22px;
   font-weight: 700;
-  margin-bottom: 0;
 }
 
 .achievements-padding {
@@ -314,57 +310,6 @@ hr {
 
 #achievements {
   position: relative;
-}
-
-/* Container Outside Shape */
-.container-outside {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 47.1%;
-  height: 100%;
-  background: #1970ff;
-  overflow: hidden;
-}
-
-.heading {
-  padding-left: 30px;
-}
-
-.d-table {
-  display: table;
-  width: 100%;
-  height: 100%;
-}
-
-.dt-cell {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.skill-area img {
-  border-radius: 4px;
-}
-
-.skills-section {
-  margin-top: 30px;
-}
-
-.skills-section .progress-box h5 {
-  color: #222222;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-.skills-section .progress {
-  background: #f9f9f9;
-  height: 10px;
-  margin-bottom: 30px;
-}
-
-.skills-section .progress .progress-bar {
-  background: #1970ff;
 }
 
 .navbar-brand {
@@ -562,9 +507,7 @@ hr {
 }
 
 #hero-area .contents .head-title {
-  color: #101010;
   font-size: 56px;
-  font-weight: 700;
   line-height: normal;
 }
 
@@ -679,52 +622,6 @@ textarea {
   color: #d9534f;
 }
 
-/* Footer Area Start */
-.footer-area {
-  background: #34363a;
-}
-
-.footer-area .footer-titel {
-  font-size: 20px;
-  color: #fff;
-  font-weight: 700;
-  padding-bottom: 10px;
-  letter-spacing: 0.5px;
-}
-
-.footer-area ul li {
-  margin-bottom: 10px;
-}
-
-.footer-area ul li a {
-  color: #ccc;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.footer-area ul li a:hover {
-  color: #1970ff;
-}
-
-.footer-area #subscribe-form {
-  margin-top: 15px;
-}
-
-.footer-area #subscribe-form .form-group {
-  position: relative;
-}
-
-.footer-area #subscribe-form .form-group .btn-common {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 7px 15px;
-  height: 39px;
-  border-radius: 0;
-  background: transparent;
-  color: #1970ff;
-  border-left: 1px solid #ddd;
-}
 .partners-area {
   background: #101010;
   padding: 20px 0;
@@ -773,8 +670,6 @@ textarea {
 .section-title h2 {
   font-size: 45px;
   color: #fff;
-  font-weight: 700;
-  margin-bottom: 0;
   width: 521px;
 }
 
@@ -825,7 +720,6 @@ textarea {
 .case-item h3 {
   font-size: 24px;
   color: #fff;
-  margin-bottom: 0;
 }
 
 .case-item p {
@@ -848,4 +742,67 @@ textarea {
   align-items: center;
 }
 
+.services-padding {
+  padding: 60px 56px;
+}
 
+.service-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-header h3 {
+  font-size: 46px;
+}
+
+.service-header p {
+  font-size: 28px;
+  max-width: 632px;
+}
+
+.services-items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-content {
+  display: flex;
+  gap: 16px;
+}
+
+.services-item {
+  background: #f8f8f8;
+  padding: 16px;
+  gap: 16px;
+  border-radius: 16px;
+  display: flex;
+}
+
+.services-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.services-content h3 {
+  color: #1970ff;
+  font-size: 18px;
+}
+
+.services-content p {
+  color: #5f5f5f;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 336px;
+}
+
+.services-item img {
+  width: 48px;
+  height: 48px;
+}
