@@ -39,11 +39,10 @@
       responsiveRefreshRate: true,
       responsive: {
         0: {
-          items: 1,
-          stagePadding: 60,
+          items: 1.2,
         },
         640: {
-          items: 1,
+          items: 1.2,
         },
         768: {
           items: 2,

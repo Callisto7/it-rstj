@@ -43,7 +43,8 @@
   .technology-header h3 {
     max-width: 100%;
   }
-  .technology-padding {
+  .technology-padding,
+  .team-padding {
     padding: 22px 16px;
   }
 }
@@ -92,7 +93,8 @@
   .technology-header h3 {
     max-width: 100%;
   }
-  .technology-padding {
+  .technology-padding,
+  .team-padding {
     padding: 22px 16px;
   }
 }
@@ -333,18 +335,22 @@
     max-width: 247px;
   }
 
-  .technology-padding {
+  .technology-padding,
+  .team-padding {
     padding: 22px 16px;
   }
-  .technology-header {
+  .technology-header,
+  .team-header {
     flex-direction: column;
     align-items: start;
     gap: 16px;
   }
-  .technology-header h3 {
+  .technology-header h3,
+  .team-header h3 {
     font-size: 32px;
   }
-  .technology-header p {
+  .technology-header p,
+  .team-header p {
     font-size: 18px;
   }
   .accordion-header {
@@ -364,8 +370,12 @@
   .accordion-body {
     overflow: scroll;
   }
-  .technology-button a {
+  .technology-button a, .team-button a {
     width: 100%;
     justify-content: center;
+  }
+
+  .team-card-person h3 {
+    font-size: 18px;
   }
 }

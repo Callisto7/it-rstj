@@ -703,11 +703,6 @@ textarea {
   border-radius: 20px;
   object-fit: cover;
 }
-
-.owl-carousel {
-  padding-left: 0; /* или можно вручную через media-запросы */
-}
-
 .case-item {
   display: flex;
   flex-direction: column;
@@ -818,29 +813,33 @@ textarea {
   cursor: pointer;
 }
 
-.technology-padding {
+.technology-padding,
+.team-padding {
   padding: 56px;
 }
-
-.technology-header {
+.technology-header,
+.team-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.technology-header h3 {
+.technology-header h3,
+.team-header h3 {
   font-size: 46px;
   max-width: 300px;
   text-align: left;
 }
 
-.technology-header p {
+.technology-header p,
+.team-header p {
   font-size: 28px;
   max-width: 600px;
   text-align: left;
 }
 
-.technology-items {
+.technology-items,
+.team-items {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -858,7 +857,6 @@ textarea {
 .accordion-body .tech-tags:last-of-type {
   padding-bottom: 16px;
 }
-
 
 .accordion-body.open {
   max-height: 600px; /* можно больше, если внутри много текста */
@@ -916,7 +914,8 @@ textarea {
   align-items: center;
 }
 
-.technology-button a{
+.technology-button a,
+.team-button a {
   gap: 10px;
   padding: 16px 24px;
   color: #fff;
@@ -925,7 +924,59 @@ textarea {
   border: none;
 }
 
-.technology-button {
+.technology-button,
+.team-button {
   display: flex;
   justify-content: center;
+}
+
+.team-padding {
+  background: #f8f8f8;
+}
+
+.team-card {
+  padding: 24px;
+  border-radius: 20px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.team-card-person,
+.team-card-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.team-card-person h3 {
+  font-size: 22px;
+}
+.team-card-person p {
+  font-size: 18px;
+}
+
+.team-card-projects p {
+  font-size: 16px;
+  color: #686868;
+  max-width: 370px;
+}
+
+.team-card-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.team-card-projects-list span {
+  border: 1px solid #101010;
+  padding: 0 14px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
 }
