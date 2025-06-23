@@ -101,6 +101,18 @@
   .callback-padding {
     padding: 22px 16px;
   }
+
+  .callback-image-mobile {
+    display: block;
+    width: 100%;
+  }
+  .callback-image {
+    display: none;
+  }
+  .callback-body {
+    border-radius: 50px;
+    padding: 56px 0 0 56px;
+  }
 }
 
 /* only small tablets */
