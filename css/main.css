@@ -623,8 +623,7 @@ textarea {
 }
 
 .partners-area {
-  background: #101010;
-  padding: 20px 0;
+  padding: 15px 0;
   overflow: hidden;
 }
 
@@ -650,6 +649,7 @@ textarea {
   width: auto;
   object-fit: contain;
   display: block;
+  max-height: 60px;
 }
 
 @keyframes scroll {
