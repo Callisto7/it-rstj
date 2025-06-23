@@ -916,7 +916,8 @@ textarea {
 }
 
 .technology-button a,
-.team-button a {
+.team-button a,
+.btn-common {
   gap: 10px;
   padding: 16px 24px;
   color: #fff;
@@ -1009,4 +1010,144 @@ textarea {
   color: #686868;
   font-size: 16px;
   line-height: 22px;
+}
+
+.callback-padding {
+  padding: 0 56px;
+}
+
+.callback-body {
+  position: relative;
+  padding: 100px;
+  background: #002a6f;
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.callback-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.callback-info h3 {
+  font-size: 46px;
+  color: #fff;
+  max-width: 570px;
+  line-height: normal;
+}
+
+.callback-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 547px;
+}
+
+.form-group,
+.form-control,
+label {
+  margin-bottom: 0;
+}
+
+.form-group-grouped {
+  display: flex;
+  gap: 16px;
+}
+
+.form-control {
+  height: 48px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #b3b3b3;
+  color: #101010;
+}
+
+.inputs-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.callback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-group-grouped input {
+  width: 265px;
+  padding: 0 16px;
+}
+
+.checkbox-group label {
+  font-size: 12px;
+  color: #fff;
+}
+
+.checkbox-group label a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.callback-button {
+  background: #fff;
+  color: #101010;
+}
+
+.checkbox-group label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 28px;
+  user-select: none;
+}
+
+.checkbox-group input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-group label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  background-color: transparent;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+
+.checkbox-group input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  width: 6px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-group a {
+  color: #e1e1e1;
+  text-decoration: underline;
+}
+
+
+.agreement-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.callback-image-mobile {
+  display: none;
 }

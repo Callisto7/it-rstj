@@ -574,9 +574,69 @@
         </div>
       </div>
     </section>
+    <section id="callback" class="callback-padding">
+      <div class="callback-body">
+        <img src="img/feedback.svg" alt="" class="callback-image" />
+        <div class="callback-info">
+          <h3 class="callback-title">Ответим на любые вопросы</h3>
+          <form action="#" class="callback-form">
+            <div class="inputs-group">
+              <div class="form-group-grouped">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Имя"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="tel"
+                    class="form-control art-stranger"
+                    id="phone"
+                    placeholder="Телефон*"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="agreement-btn">
+              <div class="form-group checkbox-group">
+                <input id="agreement" type="checkbox" required />
+                <label for="agreement">
+                  Я даю свое согласие на обработку моих персональных данных в
+                  соответствии с законом №152-ФЗ «О персональных данных» от
+                  27.07.2006 и принимаю условия
+                  <a href="#">Пользовательского соглашения</a>
+                </label>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-common callback-button">
+                  Заказать звонок <img src="img/arrow.svg" alt="arrow" />
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <img src="img/mobile-im.svg" alt="" class="callback-image-mobile" />
+      </div>
+    </section>
+
     <script src="js/jquery-min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/mask-phone.js"></script>
   </body>
 </html>

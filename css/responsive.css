@@ -45,7 +45,8 @@
   }
   .technology-padding,
   .team-padding,
-  .testimonials-padding {
+  .testimonials-padding,
+  .callback-padding {
     padding: 22px 16px;
   }
 }
@@ -96,7 +97,8 @@
   }
   .technology-padding,
   .team-padding,
-  .testimonials-padding {
+  .testimonials-padding,
+  .callback-padding {
     padding: 22px 16px;
   }
 }
@@ -339,7 +341,8 @@
 
   .technology-padding,
   .team-padding,
-  .testimonials-padding {
+  .testimonials-padding,
+  .callback-padding {
     padding: 22px 16px;
   }
   .technology-header,
@@ -349,7 +352,9 @@
     gap: 16px;
   }
   .technology-header h3,
-  .team-header h3 {
+  .team-header h3,
+  .testimonials-header h3,
+  .callback-info h3 {
     font-size: 32px;
   }
   .technology-header p,
@@ -374,12 +379,38 @@
     overflow: scroll;
   }
   .technology-button a,
-  .team-button a {
+  .team-button a,
+  .callback-button {
     width: 100%;
     justify-content: center;
   }
 
   .team-card-person h3 {
     font-size: 18px;
+  }
+
+  .callback-image {
+    display: none;
+  }
+
+  .inputs-group,
+  .form-group-grouped {
+    flex-direction: column;
+  }
+  .form-group-grouped input {
+    width: 100%;
+  }
+
+  .agreement-btn {
+    flex-direction: column-reverse;
+  }
+  .callback-image-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .callback-body {
+    padding: 32px 16px 0;
+    border-radius: 32px;
   }
 }
