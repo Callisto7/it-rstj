@@ -14,9 +14,24 @@
   </head>
   <body>
     <header id="header-wrap">
-      <nav
-        class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar"
-      >
+      <div class="top-header">
+        <div
+          class="container-fluid d-flex justify-content-end align-items-center"
+        >
+          <div class="header-item">
+            <a href="tel:+7 (916) 224 58 44"> +7 (916) 224 58 44 </a>
+            <a href="#">
+              <img src="img/tg.svg" alt="tg" />
+              <p>Telegram</p>
+            </a>
+            <a href="#">
+              <img src="img/wh.svg" alt="wh" />
+              <p>WhatsApp</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-md bg-inverse scrolling-navbar">
         <div class="container-fluid">
           <a href="index.html" class="navbar-brand"
             ><img src="img/logo.svg" alt="Logo"
@@ -44,7 +59,7 @@
               <img src="img/close.svg" alt="close" />
             </button>
             <div class="mobile-menu-item">
-              <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <ul class="navbar-nav mr-auto w-100 justify-content-end align-items-center">
                 <li class="nav-item">
                   <a class="nav-link" href="#hero-area"> Услуги </a>
                 </li>
@@ -57,8 +72,14 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#team"> Контакты </a>
                 </li>
+                <li class="nav-item none-mobile">
+                  <a class="btn btn-collback" href="#" role="button">
+                    Обсудить проект
+                  </a>
+                </li>
               </ul>
               <div class="mobile-menu-footer">
+                <p>Контакты</p>
                 <div class="social-icons">
                   <a href="#" target="_blank" rel="noopener">
                     <img src="img/whatsapp.svg" alt="whatsapp" />
@@ -68,7 +89,7 @@
                   </a>
                 </div>
                 <a class="btn btn-collback" href="#" role="button">
-                  Заказать звонок
+                  Обсудить проект
                 </a>
               </div>
             </div>

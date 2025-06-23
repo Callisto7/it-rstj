@@ -385,6 +385,35 @@ hr {
 .navbar {
   padding: 0;
   background: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.mobile-menu-footer {
+  display: none;
+}
+
+.mobile-menu-footer p {
+  font-size: 16px;
+  color: #101010;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-header {
+  height: 32px;
+  background: #f8f8f8;
+  display: flex;
+}
+
+.top-header a {
+  display: flex;
+  gap: 8px;
+  color: #101010;
+  font-size: 14px;
 }
 
 .navbar li.active a.nav-link {
@@ -1142,7 +1171,6 @@ label {
   color: #e1e1e1;
   text-decoration: underline;
 }
-
 
 .agreement-btn {
   display: flex;
