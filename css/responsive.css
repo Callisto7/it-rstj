@@ -44,7 +44,8 @@
     max-width: 100%;
   }
   .technology-padding,
-  .team-padding {
+  .team-padding,
+  .testimonials-padding {
     padding: 22px 16px;
   }
 }
@@ -94,7 +95,8 @@
     max-width: 100%;
   }
   .technology-padding,
-  .team-padding {
+  .team-padding,
+  .testimonials-padding {
     padding: 22px 16px;
   }
 }
@@ -336,7 +338,8 @@
   }
 
   .technology-padding,
-  .team-padding {
+  .team-padding,
+  .testimonials-padding {
     padding: 22px 16px;
   }
   .technology-header,
@@ -370,7 +373,8 @@
   .accordion-body {
     overflow: scroll;
   }
-  .technology-button a, .team-button a {
+  .technology-button a,
+  .team-button a {
     width: 100%;
     justify-content: center;
   }

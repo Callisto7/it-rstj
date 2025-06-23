@@ -814,21 +814,21 @@ textarea {
 }
 
 .technology-padding,
-.team-padding {
+.team-padding,
+.testimonials-padding {
   padding: 56px;
 }
 .technology-header,
 .team-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 .technology-header h3,
-.team-header h3 {
+.team-header h3,
+.testimonials-header h3 {
   font-size: 46px;
   max-width: 300px;
-  text-align: left;
 }
 
 .technology-header p,
@@ -839,7 +839,8 @@ textarea {
 }
 
 .technology-items,
-.team-items {
+.team-items,
+.testimonials-items {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -934,7 +935,8 @@ textarea {
   background: #f8f8f8;
 }
 
-.team-card {
+.team-card,
+.testimonial-card {
   padding: 24px;
   border-radius: 20px;
   border: 1px solid #eaeaea;
@@ -945,7 +947,8 @@ textarea {
 }
 
 .team-card-person,
-.team-card-projects {
+.team-card-projects,
+.testimonial-card-person {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -954,8 +957,19 @@ textarea {
 .team-card-person h3 {
   font-size: 22px;
 }
+
 .team-card-person p {
   font-size: 18px;
+}
+
+.testimonial-card-person p.name-person {
+  font-weight: 600;
+}
+
+.testimonial-card-person p.position-person {
+  font-weight: 600;
+  font-size: 14px;
+  color: #5f5f5f;
 }
 
 .team-card-projects p {
@@ -979,4 +993,20 @@ textarea {
   white-space: nowrap;
   display: flex;
   align-items: center;
+}
+
+.testimonial-company-name h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #5f5f5f;
+}
+
+.testimonial-card {
+  gap: 16px;
+}
+
+.testimonial-text-card p {
+  color: #686868;
+  font-size: 16px;
+  line-height: 22px;
 }
