@@ -27,9 +27,10 @@
     var owl = $(".owl-carousel");
     owl.owlCarousel({
       loop: true,
+      rewind: true,
       nav: false,
       dots: false,
-      center: true,
+      center: false,
       margin: 24,
       slideSpeed: 8000,
       stopOnHover: true,
@@ -41,7 +42,7 @@
           items: 1.2,
         },
         640: {
-          items: 1.2,
+          items: 1.3,
         },
         768: {
           items: 2,

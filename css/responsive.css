@@ -227,9 +227,6 @@
     width: 100%;
     justify-content: center;
   }
-  .items-cases {
-    flex-direction: column;
-  }
   .container-cases {
     border-radius: 32px;
     padding: 60px 16px;
