@@ -67,6 +67,9 @@
     const $accordionHeaders = $(".accordion-header");
     const $accordionBodies = $(".accordion-body");
 
+    $accordionHeaders.eq(0).addClass("active");
+    $accordionBodies.eq(0).addClass("open");
+
     $accordionHeaders.on("click", function () {
       const $this = $(this);
       const index = $this.data("index");
