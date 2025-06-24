@@ -1,0 +1,15 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="32" y="32" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="32" y="4" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="4" y="4" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<rect x="4" y="32" width="12" height="12" rx="3" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M31.875 10L17 10" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 17L38 31.875" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 17L10 31.875" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.875 38L17 38" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M38 38L41.5 34.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M38 10L41.5 6.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M10 10L13.5 6.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M10 38L13.5 34.5" stroke="#1970FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="bevel"/>
+<path d="M17 29.4336C18.0986 27.6011 20.5065 26.3469 24.2631 26.3469C28.0197 26.3469 30.4276 27.6011 31.5262 29.4336M27.2472 19.9841C27.2472 21.6321 25.9112 22.9681 24.2631 22.9681C22.6151 22.9681 21.279 21.6321 21.279 19.9841C21.279 18.336 22.6151 17 24.2631 17C25.9112 17 27.2472 18.336 27.2472 19.9841Z" stroke="#1970FF" stroke-width="2" stroke-linecap="round"/>
+</svg>
