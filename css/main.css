@@ -845,7 +845,8 @@ textarea {
 
 .technology-padding,
 .team-padding,
-.testimonials-padding {
+.testimonials-padding,
+.footer-area {
   padding: 56px;
 }
 .technology-header,
@@ -1162,7 +1163,7 @@ label {
   top: 6px;
   width: 6px;
   height: 10px;
-  border: solid white;
+  border: solid #fff;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
@@ -1180,4 +1181,52 @@ label {
 
 .callback-image-mobile {
   display: none;
+}
+
+.footer-area {
+  display: flex;
+  gap: 80px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer-area h3 {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+address {
+  margin-bottom: 0;
+}
+
+address,
+span {
+  color: #101010;
+}
+
+.footer-about,
+.footer-links,
+.footer-documents,
+.footer-contacts,
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-about img {
+  max-width: 200px;
+}
+
+.footer-about {
+  max-width: 375px;
+}
+
+.footer-area a {
+  color: #101010;
+}
+
+.footer-icon {
+  display: flex;
+  gap: 16px;
 }

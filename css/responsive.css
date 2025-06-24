@@ -46,7 +46,8 @@
   .technology-padding,
   .team-padding,
   .testimonials-padding,
-  .callback-padding {
+  .callback-padding,
+  .footer-area {
     padding: 22px 16px;
   }
 }
@@ -98,7 +99,8 @@
   .technology-padding,
   .team-padding,
   .testimonials-padding,
-  .callback-padding {
+  .callback-padding,
+  .footer-area {
     padding: 22px 16px;
   }
 
@@ -112,6 +114,9 @@
   .callback-body {
     border-radius: 50px;
     padding: 56px 0 0 56px;
+  }
+  .footer-area {
+    gap: 46px;
   }
 }
 
@@ -357,7 +362,8 @@
   .technology-padding,
   .team-padding,
   .testimonials-padding,
-  .callback-padding {
+  .callback-padding,
+  .footer-area {
     padding: 22px 16px;
   }
   .technology-header,
@@ -427,5 +433,10 @@
   .callback-body {
     padding: 32px 16px 0;
     border-radius: 32px;
+  }
+
+  .footer-area {
+    flex-direction: column;
+    gap: 32px;
   }
 }
