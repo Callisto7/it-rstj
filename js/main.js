@@ -34,7 +34,7 @@
       margin: 24,
       slideSpeed: 8000,
       stopOnHover: true,
-      autoplay: false, // autoplay включен
+      autoplay: true, // autoplay включен
       autoplayTimeout: 5000,
       responsiveClass: true,
       responsiveRefreshRate: true,
@@ -147,24 +147,23 @@
     $('input[type="tel"]').click(function () {
       $(this).setCursorPosition(4); // set position number
     });
-document.querySelectorAll('.testimonial-card').forEach((card) => {
-  const textCard = card.querySelector('.testimonial-text-card');
+    document.querySelectorAll(".testimonial-card").forEach((card) => {
+      const textCard = card.querySelector(".testimonial-text-card");
 
-  textCard.addEventListener('click', () => {
-    // Закрываем все карточки
-    document.querySelectorAll('.testimonial-card').forEach((otherCard) => {
-      if (otherCard !== card) {
-        otherCard.classList.remove('expanded');
-        const otherText = otherCard.querySelector('.testimonial-text-card');
-        otherText.classList.remove('expanded');
-      }
+      textCard.addEventListener("click", () => {
+        // Закрываем все карточки
+        document.querySelectorAll(".testimonial-card").forEach((otherCard) => {
+          if (otherCard !== card) {
+            otherCard.classList.remove("expanded");
+            const otherText = otherCard.querySelector(".testimonial-text-card");
+            otherText.classList.remove("expanded");
+          }
+        });
+
+        // Переключаем текущую карточку
+        textCard.classList.toggle("expanded");
+        card.classList.toggle("expanded");
+      });
     });
-
-    // Переключаем текущую карточку
-    textCard.classList.toggle('expanded');
-    card.classList.toggle('expanded');
-  });
-});
-
   });
 })(jQuery);
