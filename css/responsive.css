@@ -50,6 +50,9 @@
   .footer-area {
     padding: 28px 16px;
   }
+  .achievements-item h3 {
+    font-size: 48px;
+  }
 }
 
 /* tablets */
@@ -57,7 +60,9 @@
   #pricing-table .title h3 {
     font-size: 14px;
   }
-
+  .achievements-item h3 {
+    font-size: 48px;
+  }
   .container-fluid {
     padding-left: 16px;
     padding-right: 16px;

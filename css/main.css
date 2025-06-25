@@ -3,6 +3,10 @@ html {
   overflow-x: hidden;
 }
 
+:root {
+  --header-offset: 25px; /* если есть фиксированный header, иначе 0px */
+}
+
 body {
   background: #fff;
   font-size: 16px;
@@ -258,7 +262,8 @@ hr {
   border-radius: 20px;
   border: 1px solid #eaeaea;
   position: relative;
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
 }
 
 .achievement-content {
@@ -890,9 +895,6 @@ textarea {
   padding-bottom: 16px;
 }
 
-.accordion-body.open {
-  max-height: 600px; /* можно больше, если внутри много текста */
-}
 .accordion-header {
   cursor: pointer;
   position: relative;

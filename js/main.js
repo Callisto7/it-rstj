@@ -64,30 +64,116 @@
       });
     }
 
-    const $accordionHeaders = $(".accordion-header");
-    const $accordionBodies = $(".accordion-body");
+// const $accordionHeaders = $(".accordion-header");
+// const $accordionBodies = $(".accordion-body");
 
-    $accordionHeaders.eq(0).addClass("active");
-    $accordionBodies.eq(0).addClass("open");
+// $accordionHeaders.eq(0).addClass("active");
+// $accordionBodies.eq(0).addClass("open");
 
-    $accordionHeaders.on("click", function () {
-      const $this = $(this);
-      const index = $this.data("index");
+// $accordionHeaders.on("click", function () {
+//   const $this = $(this);
+//   const index = $this.data("index");
 
-      $accordionHeaders.each(function (i) {
-        const $header = $(this);
-        const $body = $accordionBodies.eq(i);
+//   $accordionHeaders.each(function (i) {
+//     const $header = $(this);
+//     const $body = $accordionBodies.eq(i);
 
-        if (i === index) {
-          const isOpen = $body.hasClass("open");
-          $body.toggleClass("open", !isOpen);
-          $header.toggleClass("active", !isOpen);
-        } else {
-          $body.removeClass("open");
-          $header.removeClass("active");
-        }
+//     if (i === index) {
+//       const isOpen = $body.hasClass("open");
+//       $body.toggleClass("open", !isOpen);
+//       $header.toggleClass("active", !isOpen);
+
+//       if (!isOpen) {
+//         // Прокрутка с небольшой задержкой (чтобы отработала анимация открытия)
+//         setTimeout(() => {
+//           const headerOffset = $header.offset().top;
+
+//           // Можно адаптировать offset если есть fixed-шапка (например, вычесть 80px)
+//           $("html, body").animate({ scrollTop: headerOffset - 60 }, 300);
+//         }, 200); // подстрой под свою анимацию
+//       }
+//     } else {
+//       $body.removeClass("open");
+//       $header.removeClass("active");
+//     }
+//   });
+// });
+
+// const $accordionHeaders = $(".accordion-header");
+// const $accordionBodies = $(".accordion-body");
+
+// $accordionHeaders.eq(0).addClass("active");
+// $accordionBodies.eq(0).addClass("open").css("max-height", $accordionBodies.eq(0)[0].scrollHeight + "px");
+
+// $accordionHeaders.on("click", function () {
+//   const $this = $(this);
+//   const index = $this.data("index");
+
+//   $accordionHeaders.each(function (i) {
+//     const $header = $(this);
+//     const $body = $accordionBodies.eq(i);
+
+//     if (i === index) {
+//       const isOpen = $body.hasClass("open");
+
+//       if (isOpen) {
+//         $body.css("max-height", "0");
+//         $body.removeClass("open");
+//         $header.removeClass("active");
+//       } else {
+//         $body.css("max-height", $body[0].scrollHeight + "px");
+//         $body.addClass("open");
+//         $header.addClass("active");
+//       }
+//     } else {
+//       $accordionBodies.eq(i).css("max-height", "0").removeClass("open");
+//       $accordionHeaders.eq(i).removeClass("active");
+//     }
+//   });
+// });
+const $accordionHeaders = $(".accordion-header");
+const $accordionBodies = $(".accordion-body");
+
+// Открытие по умолчанию
+$accordionHeaders.eq(0).addClass("active");
+$accordionBodies.eq(0).addClass("open").css("max-height", $accordionBodies.eq(0)[0].scrollHeight + "px");
+
+$accordionHeaders.on("click", function () {
+  const $this = $(this);
+  const index = $this.data("index");
+  const $body = $accordionBodies.eq(index);
+  const $header = $accordionHeaders.eq(index);
+
+  const isOpen = $body.hasClass("open");
+
+  // Закрываем все
+  $accordionBodies.each(function (i, el) {
+    $(el).removeClass("open").css("max-height", "0");
+  });
+  $accordionHeaders.removeClass("active");
+
+  if (!isOpen) {
+    $body.addClass("open");
+    $header.addClass("active");
+
+    // Устанавливаем нужную высоту
+    const scrollHeight = $body[0].scrollHeight;
+    $body.css("max-height", scrollHeight + "px");
+
+    // Ждём чуть-чуть и плавно скроллим
+    setTimeout(() => {
+      const offset = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-offset')) || 0;
+      const top = $header.offset().top - offset;
+
+      window.scrollTo({
+        top,
+        behavior: "smooth"
       });
-    });
+    }, 200); // задержка чуть больше transition в CSS
+  }
+});
+
+
 
     $(".art-stranger").mask("+7 (999) 999-99-99");
 
