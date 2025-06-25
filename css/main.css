@@ -242,7 +242,7 @@ hr {
 }
 
 .wave-img {
-  content: url("../img/wave.png");
+  content: url("../img/wave.svg");
 }
 .text-wrapper {
   height: 100%;
@@ -310,7 +310,7 @@ hr {
 }
 
 .achievements-padding {
-  padding: 150px 0 150px;
+  padding: 115px 0 115px;
 }
 
 #achievements {

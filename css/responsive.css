@@ -290,7 +290,7 @@
     align-items: start;
   }
   .wave-img {
-    content: url("../img/wave-mobile.png");
+    content: url("../img/wave-mobile.svg");
   }
   .mobile-menu-close {
     display: block;
@@ -451,7 +451,6 @@
   }
 
   .achievements-items {
-    flex-direction: column-reverse;
     gap: 33px;
   }
 }
