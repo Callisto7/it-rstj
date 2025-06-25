@@ -7,6 +7,10 @@ html {
   --header-offset: 25px; /* если есть фиксированный header, иначе 0px */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   font-size: 16px;
@@ -978,7 +982,13 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  transition: border 0.3s ease;
 }
+
+.testimonial-card.expanded {
+  border: 1px solid #000;
+}
+
 
 .team-card-person,
 .team-card-projects,
@@ -1043,6 +1053,23 @@ textarea {
   color: #686868;
   font-size: 16px;
   line-height: 22px;
+}
+.testimonial-text-card {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* кол-во строк по умолчанию */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.testimonial-text-card.expanded {
+  -webkit-line-clamp: unset;
+  max-height: none;
+}
+
+.testimonial-text-card.expanded::after {
+  content: none;
 }
 
 .callback-padding {
