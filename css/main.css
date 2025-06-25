@@ -858,10 +858,12 @@ textarea {
 }
 
 .technology-padding,
-.team-padding,
 .testimonials-padding,
 .footer-area {
   padding: 56px;
+}
+.team-padding {
+  padding: 56px 56px 0;
 }
 .technology-header,
 .team-header {
