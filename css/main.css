@@ -547,6 +547,7 @@ hr {
 #hero-area .contents .head-title {
   font-size: 56px;
   line-height: normal;
+  max-width: 985px;
 }
 
 #hero-area .contents .head-description {
@@ -708,8 +709,8 @@ textarea {
   gap: 56px;
 }
 
-.section-title h2 {
-  font-size: 45px;
+.section-title h3 {
+  font-size: 46px;
   color: #fff;
   width: 521px;
 }
@@ -830,6 +831,10 @@ textarea {
 .services-item img {
   width: 48px;
   height: 48px;
+}
+
+.mobile-br {
+  display: none;
 }
 
 .owl-nav {
@@ -988,7 +993,6 @@ textarea {
 .testimonial-card.expanded {
   border: 1px solid #000;
 }
-
 
 .team-card-person,
 .team-card-projects,
@@ -1237,10 +1241,19 @@ span {
 .footer-links,
 .footer-documents,
 .footer-contacts,
-.footer-list {
+.footer-list,
+.head-info {
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+.footer-about {
+  justify-content: space-between;
+}
+
+.desktop-none {
+  display: none;
 }
 
 .footer-about img {

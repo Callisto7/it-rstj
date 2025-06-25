@@ -208,14 +208,16 @@
   .section-padding {
     padding: 50px 0;
   }
+
+  .team-card,
+  .testimonial-card {
+    padding: 16px;
+  }
   .section-title {
     font-size: 22px;
     flex-direction: column;
   }
 
-  .section-title h2 {
-    font-size: 32px;
-  }
   .section-title p {
     font-size: 16px;
   }
@@ -248,11 +250,7 @@
     padding: 0px 15px;
   }
   #hero-area .contents {
-    padding: 100px 0px 0px 0px;
-  }
-  #hero-area .contents .head-title {
-    font-size: 32px;
-    margin-bottom: 0;
+    padding: 37px 0px 0px 0px;
   }
   #hero-area .contents .head-description {
     max-width: 275px;
@@ -271,12 +269,15 @@
     z-index: 1000;
     padding: 16px;
     overflow-y: auto;
-
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transform: translateY(-20px);
     transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+
+  .mobile-br {
+    display: inline;
   }
 
   .navbar-collapse.show {
@@ -338,14 +339,23 @@
 
   .achievements-text p {
     font-size: 22px;
-    max-width: 336px;
+    max-width: 343px;
   }
 
   .achievement-items {
     gap: 33px;
   }
   .achievements-item {
-    width: 100%;
+    max-width: 100%;
+    padding: 16px 24px;
+  }
+
+  .corner-icon {
+    height: 100%;
+  }
+
+  .achievements-item p {
+    font-size: 16px;
   }
 
   .achievements-padding {
@@ -363,6 +373,9 @@
   }
   .service-header {
     gap: 16px;
+  }
+  .service-header p {
+    font-size: 18px;
   }
   .services-content h3,
   .services-content p {
@@ -385,7 +398,10 @@
   .technology-header h3,
   .team-header h3,
   .testimonials-header h3,
-  .callback-info h3 {
+  .callback-info h3,
+  .service-header h3,
+  .section-title h3,
+  #hero-area .contents .head-title {
     font-size: 32px;
   }
   .technology-header p,
@@ -398,7 +414,8 @@
   .tech-block h4 {
     font-size: 16px;
   }
-  .tech-tags span {
+  .tech-tags span,
+  .team-card-projects-list span {
     height: 32px;
   }
 
@@ -441,7 +458,7 @@
   }
 
   .callback-body {
-    padding: 32px 16px 0;
+    padding: 40px 16px 0;
     border-radius: 32px;
   }
 
@@ -452,5 +469,12 @@
 
   .achievements-items {
     gap: 33px;
+  }
+
+  .mobile-none {
+    display: none;
+  }
+  .desktop-none {
+    display: block;
   }
 }
