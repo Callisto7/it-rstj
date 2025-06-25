@@ -4,7 +4,7 @@ html {
 }
 
 :root {
-  --header-offset: 25px; /* если есть фиксированный header, иначе 0px */
+  --header-offset: 100px; /* если есть фиксированный header, иначе 0px */
 }
 
 html {
