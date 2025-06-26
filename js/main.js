@@ -165,5 +165,65 @@
         card.classList.toggle("expanded");
       });
     });
+    const modal = document.getElementById("projectModal");
+    const openBtn = document.getElementById("openModal");
+    const closeBtn = modal.querySelector(".close-button");
+
+    const successModal = document.getElementById("successModal");
+    const successCloseBtn = successModal.querySelector(".success-close");
+    const successButton = successModal.querySelector(".success-button");
+
+    const form = modal.querySelector(".callback-form");
+
+    openBtn.addEventListener("click", function (event) {
+      event.preventDefault();
+      modal.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    successCloseBtn.addEventListener("click", function () {
+      successModal.style.display = "none";
+    });
+
+    successButton.addEventListener("click", function () {
+      successModal.style.display = "none";
+    });
+
+    window.addEventListener("click", function (event) {
+      if (
+        event.target === modal ||
+        event.target === modal.querySelector(".modal-wrapper")
+      ) {
+        modal.style.display = "none";
+      }
+      if (
+        event.target === successModal ||
+        event.target === successModal.querySelector(".modal-wrapper")
+      ) {
+        successModal.style.display = "none";
+      }
+    });
+
+    window.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        modal.style.display = "none";
+        successModal.style.display = "none";
+      }
+    });
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Здесь может быть валидация и отправка на сервер
+
+      // Закрываем первую модалку
+      modal.style.display = "none";
+
+      // Открываем модалку "спасибо"
+      successModal.style.display = "block";
+    });
   });
 })(jQuery);

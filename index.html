@@ -126,7 +126,9 @@
                 Решим любую IT задачу вашего проекта
               </p>
               <div class="header-button">
-                <a href="#" class="btn btn-common">Обсудить проект</a>
+                <a href="#" class="btn btn-common" id="openModal"
+                  >Обсудить проект</a
+                >
               </div>
             </div>
           </div>
@@ -1162,7 +1164,85 @@
         </div>
       </div>
     </footer>
-
+    <div id="projectModal" class="modal">
+      <div class="modal-wrapper">
+        <div class="modal-content">
+          <img src="img/close-modal.svg" class="close-button" alt="Закрыть" />
+          <div class="content-section">
+            <div class="modal-heder-text">
+              <h3>Обсудить проект</h3>
+              <div class="modal-content-description">
+                <p>Заполните форму.</p>
+                <p>Мы позвоним вам в течение 20 минут</p>
+              </div>
+            </div>
+            <form action="#" class="callback-form">
+              <div class="inputs-group">
+                <div class="form-group-modal">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="Имя"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="tel"
+                      class="form-control art-stranger"
+                      id="phone"
+                      placeholder="Телефон*"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="agreement-btn">
+                <div class="form-group checkbox-group">
+                  <input id="agreement-modal" type="checkbox" required />
+                  <label for="agreement-modal">
+                    Я даю свое согласие на обработку моих персональных данных в
+                    соответствии с законом №152-ФЗ «О персональных данных» от
+                    27.07.2006 и принимаю условия
+                    <a href="#">Пользовательского соглашения</a>
+                  </label>
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-common callback-button">
+                    Заказать звонок <img src="img/arrow.svg" alt="arrow" />
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="successModal" class="modal">
+      <div class="modal-wrapper">
+        <div class="success-modal-content">
+          <img src="img/close.svg" class="success-close" alt="Закрыть" />
+          <div class="success-section">
+            <img src="img/success-icon.svg" alt="success-icon" />
+            <div class="modal-success-text">
+              <h3>Мы позвоним вам в течение 20 минут</h3>
+            </div>
+            <button type="submit" class="btn btn-common success-button">
+              Хорошо
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery-min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

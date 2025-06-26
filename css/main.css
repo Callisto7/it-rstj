@@ -1276,3 +1276,119 @@ span {
 .pt-16 {
   padding-top: 16px;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.modal-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-content {
+  background-color: #002a6f;
+  background-image: url(../img/modal-icon.svg);
+  padding: 100px;
+  border-radius: 100px;
+  width: 100%;
+  max-width: 1108px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.close-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.modal-content h3 {
+  font-size: 46px;
+  color: #fff;
+}
+
+.modal-content p {
+  font-size: 16px;
+  color: #fff;
+}
+
+.modal-heder-text,
+.modal-content-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.modal-content-description {
+  gap: 8px;
+}
+
+.content-section {
+  max-width: 475px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.form-group-modal input {
+  width: 230px;
+}
+
+.form-group-modal {
+  display: flex;
+  gap: 16px;
+}
+
+.success-modal-content {
+  background-color: #fff;
+  padding: 16px;
+  max-width: 343px;
+  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-success-text h3 {
+  font-size: 22px;
+}
+
+.success-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.success-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.success-button {
+  width: 100%;
+  background: transparent;
+  color: #101010;
+  border: 1px solid #b3b3b3;
+  justify-content: center;
+}
