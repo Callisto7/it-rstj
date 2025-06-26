@@ -79,7 +79,7 @@
                   <a class="nav-link" href="#contacts"> Контакты </a>
                 </li>
                 <li class="nav-item none-mobile">
-                  <a class="btn btn-collback" href="#" role="button">
+                  <a class="btn btn-collback open-modal" href="#" role="button">
                     Обсудить проект
                   </a>
                 </li>
@@ -102,7 +102,7 @@
                     <img src="img/whatsapp.svg" alt="whatsapp" />
                   </a>
                 </div>
-                <a class="btn btn-collback" href="#" role="button">
+                <a class="btn btn-collback open-modal" href="#" role="button">
                   Обсудить проект
                 </a>
               </div>
@@ -126,7 +126,7 @@
                 Решим любую IT задачу вашего проекта
               </p>
               <div class="header-button">
-                <a href="#" class="btn btn-common" id="openModal"
+                <a href="#" class="btn btn-common open-modal"
                   >Обсудить проект</a
                 >
               </div>
@@ -1081,6 +1081,39 @@
         <img src="img/mobile-im.svg" alt="" class="callback-image-mobile" />
       </div>
     </section>
+    <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".callback-form");
+    const modal = document.getElementById("successModal");
+    const closeBtn = modal.querySelector(".success-close");
+    const okBtn = modal.querySelector(".success-button");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault(); // предотвратить отправку формы по умолчанию
+
+      // здесь можно добавить валидацию или отправку данных через fetch/AJAX, если нужно
+
+      modal.style.display = "block"; // показать модальное окно
+      form.reset();
+    });
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+    // Закрытие по кнопке "Хорошо" или иконке "крестик"
+    closeBtn.addEventListener("click", closeModal);
+    okBtn.addEventListener("click", closeModal);
+
+    // Закрытие по клику вне окна
+    modal.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        closeModal();
+      }
+    });
+  });
+</script>
+
     <footer class="footer" id="contacts">
       <div class="footer-area">
         <div class="footer-about">
@@ -1234,7 +1267,10 @@
           <div class="success-section">
             <img src="img/success-icon.svg" alt="success-icon" />
             <div class="modal-success-text">
-              <h3>Мы позвоним вам <span class="mobile-br"><br /></span> в течение 20 минут</h3>
+              <h3>
+                Мы позвоним вам <span class="mobile-br"><br /></span> в течение
+                20 минут
+              </h3>
             </div>
             <button type="submit" class="btn btn-common success-button">
               Хорошо
