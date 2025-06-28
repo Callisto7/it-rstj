@@ -231,10 +231,9 @@
               />
             </div>
             <h3>Платформа RostJob</h3>
-            <p>
-              RostJob — это площадка для поиска и подбора персонала. Сервис по
-              поиску кадров.
-            </p>
+            <div class="cases-tags">
+              <span>Fintech</span>
+            </div>
           </div>
           <div class="case-item">
             <div class="images-cases">
@@ -245,22 +244,22 @@
               />
             </div>
             <h3>Площадка Myjobox</h3>
-            <p>
-              MyJobox - это сайт для поиска работы. Сайт позволяет работодателям
-              размещать объявления о работе, а соискателей откликаться на
-              вакансии.
-            </p>
+            <div class="cases-tags">
+              <span>Fintech</span>
+            </div>
           </div>
           <div class="case-item">
             <div class="images-cases">
               <img src="img/cases/uaz.png" alt="uaz" class="img-gallery" />
             </div>
             <h3>Система документооборота УАЗ</h3>
-            <p>
-              RostJob — это площадка для поиска и подбора персонала. Сервис по
-              поиску кадров.
-            </p>
+            <div class="cases-tags">
+              <span>Fintech</span>
+            </div>
           </div>
+        </div>
+        <div class="carousel-next next-cases">
+          <img src="img/arrow-slider.svg" alt="Вперёд" />
         </div>
         <!-- <div class="cases-button">
           <a href="#" class="btn btn-common"
@@ -616,6 +615,9 @@
             </div>
           </div>
         </div>
+        <div class="carousel-next next-cases">
+          <img src="img/arrow-slider.svg" alt="Вперёд" />
+        </div>
         <!-- <div class="technology-button">
           <a href="#" class="btn btn-common"
             >Все услуги <img src="img/arrow-white.svg" alt="arrow"
@@ -953,6 +955,9 @@
             </div>
           </div>
         </div>
+        <div class="carousel-next">
+          <img src="img/arrow-slider.svg" alt="Вперёд" />
+        </div>
         <!-- <div class="team-button text-center">
           <a href="#" class="btn btn-common"
             >Все специалисты <img src="img/arrow-white.svg" alt="arrow"
@@ -1021,6 +1026,9 @@
             </div>
           </div>
         </div>
+        <div class="carousel-next">
+          <img src="img/arrow-slider.svg" alt="Вперёд" />
+        </div>
       </div>
     </section>
     <section id="callback" class="callback-padding">
@@ -1082,37 +1090,37 @@
       </div>
     </section>
     <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".callback-form");
-    const modal = document.getElementById("successModal");
-    const closeBtn = modal.querySelector(".success-close");
-    const okBtn = modal.querySelector(".success-button");
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector(".callback-form");
+        const modal = document.getElementById("successModal");
+        const closeBtn = modal.querySelector(".success-close");
+        const okBtn = modal.querySelector(".success-button");
 
-    form.addEventListener("submit", function (e) {
-      e.preventDefault(); // предотвратить отправку формы по умолчанию
+        form.addEventListener("submit", function (e) {
+          e.preventDefault(); // предотвратить отправку формы по умолчанию
 
-      // здесь можно добавить валидацию или отправку данных через fetch/AJAX, если нужно
+          // здесь можно добавить валидацию или отправку данных через fetch/AJAX, если нужно
 
-      modal.style.display = "block"; // показать модальное окно
-      form.reset();
-    });
+          modal.style.display = "block"; // показать модальное окно
+          form.reset();
+        });
 
-    function closeModal() {
-      modal.style.display = "none";
-    }
+        function closeModal() {
+          modal.style.display = "none";
+        }
 
-    // Закрытие по кнопке "Хорошо" или иконке "крестик"
-    closeBtn.addEventListener("click", closeModal);
-    okBtn.addEventListener("click", closeModal);
+        // Закрытие по кнопке "Хорошо" или иконке "крестик"
+        closeBtn.addEventListener("click", closeModal);
+        okBtn.addEventListener("click", closeModal);
 
-    // Закрытие по клику вне окна
-    modal.addEventListener("click", function (e) {
-      if (e.target === modal) {
-        closeModal();
-      }
-    });
-  });
-</script>
+        // Закрытие по клику вне окна
+        modal.addEventListener("click", function (e) {
+          if (e.target === modal) {
+            closeModal();
+          }
+        });
+      });
+    </script>
 
     <footer class="footer" id="contacts">
       <div class="footer-area">

@@ -701,6 +701,7 @@ textarea {
 }
 
 .container-cases {
+  position: relative;
   border-radius: 100px;
   padding: 100px 56px;
   background: #002a6f;
@@ -1392,4 +1393,48 @@ span {
   color: #101010;
   border: 1px solid #b3b3b3;
   justify-content: center;
+}
+
+.team-items,
+.testimonials-items {
+  position: relative;
+}
+
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  right: -45px;
+  transform: translateY(-50%);
+  background: none;
+  border-radius: 20px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #101010;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.next-cases {
+  right: 15px;
+}
+
+.cases-tags span {
+  border: 1px solid #fff;
+  padding: 0 14px;
+  color: #fff;
+  height: 32px;
+  border-radius: 50px;
+  font-size: 16px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.cases-tags {
+  display: flex;
+  gap: 8px;
 }
