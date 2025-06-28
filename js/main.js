@@ -54,7 +54,8 @@
       });
 
       $(".carousel-next").on("click", function () {
-        $testimonials.trigger("next.owl.carousel");
+        const $carousel = $(this).siblings(".owl-carousel");
+        $carousel.trigger("next.owl.carousel");
       });
     }
 
@@ -66,20 +67,24 @@
       });
 
       $(".carousel-next").on("click", function () {
-        $team.trigger("next.owl.carousel");
+        const $carousel = $(this).siblings(".owl-carousel");
+        $carousel.trigger("next.owl.carousel");
       });
     }
 
-    $(".owl-carousel").not("#testimonials .owl-carousel, .team-items .owl-carousel").each(function () {
-      const $carousel = $(this);
-      $carousel.owlCarousel({
-        ...carouselOptions,
-        autoplay: false,
+    $(".owl-carousel")
+      .not("#testimonials .owl-carousel, .team-items .owl-carousel")
+      .each(function () {
+        const $carousel = $(this);
+        $carousel.owlCarousel({
+          ...carouselOptions,
+          autoplay: false,
+        });
+        $(".carousel-next").on("click", function () {
+          const $carousel = $(this).siblings(".owl-carousel");
+          $carousel.trigger("next.owl.carousel");
+        });
       });
-      $(".carousel-next").on("click", function () {
-        $carousel.trigger("next.owl.carousel");
-      });
-    });
 
     const $casesCarousel = $(".items-cases");
     if ($casesCarousel.length) {
@@ -108,7 +113,10 @@
 
     if ($accordionHeaders.length && $accordionBodies.length) {
       $accordionHeaders.eq(0).addClass("active");
-      $accordionBodies.eq(0).addClass("open").css("max-height", $accordionBodies.eq(0)[0].scrollHeight + "px");
+      $accordionBodies
+        .eq(0)
+        .addClass("open")
+        .css("max-height", $accordionBodies.eq(0)[0].scrollHeight + "px");
 
       $accordionHeaders.on("click", function () {
         const $this = $(this);
@@ -121,12 +129,18 @@
         $accordionHeaders.removeClass("active");
 
         if (!isOpen) {
-          $body.addClass("open").css("max-height", $body[0].scrollHeight + "px");
+          $body
+            .addClass("open")
+            .css("max-height", $body[0].scrollHeight + "px");
           $header.addClass("active");
 
           setTimeout(() => {
             const offset =
-              parseInt(getComputedStyle(document.documentElement).getPropertyValue("--header-offset")) || 0;
+              parseInt(
+                getComputedStyle(document.documentElement).getPropertyValue(
+                  "--header-offset"
+                )
+              ) || 0;
             const top = $header.offset().top - offset;
             window.scrollTo({ top, behavior: "smooth" });
           }, 200);
@@ -159,13 +173,17 @@
       const textCard = card.querySelector(".testimonial-text-card");
       if (textCard) {
         textCard.addEventListener("click", () => {
-          document.querySelectorAll(".testimonial-card").forEach((otherCard) => {
-            if (otherCard !== card) {
-              otherCard.classList.remove("expanded");
-              const otherText = otherCard.querySelector(".testimonial-text-card");
-              otherText?.classList.remove("expanded");
-            }
-          });
+          document
+            .querySelectorAll(".testimonial-card")
+            .forEach((otherCard) => {
+              if (otherCard !== card) {
+                otherCard.classList.remove("expanded");
+                const otherText = otherCard.querySelector(
+                  ".testimonial-text-card"
+                );
+                otherText?.classList.remove("expanded");
+              }
+            });
 
           textCard.classList.toggle("expanded");
           card.classList.toggle("expanded");
@@ -204,10 +222,16 @@
       });
 
       window.addEventListener("click", (event) => {
-        if (event.target === modal || event.target === modal.querySelector(".modal-wrapper")) {
+        if (
+          event.target === modal ||
+          event.target === modal.querySelector(".modal-wrapper")
+        ) {
           modal.style.display = "none";
         }
-        if (event.target === successModal || event.target === successModal.querySelector(".modal-wrapper")) {
+        if (
+          event.target === successModal ||
+          event.target === successModal.querySelector(".modal-wrapper")
+        ) {
           successModal.style.display = "none";
         }
       });
