@@ -98,7 +98,6 @@
       });
     }
 
-    // Кастомная карусель (дублирование элементов)
     const track = document.querySelector(".carousel-track");
     const items = document.querySelectorAll(".item");
     if (track && items.length) {
@@ -243,10 +242,24 @@
         }
       });
 
-      form?.addEventListener("submit", (e) => {
-        e.preventDefault();
-        modal.style.display = "none";
-        successModal.style.display = "block";
+      document.querySelectorAll(".callback-form").forEach((form) => {
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          // Закрытие модального окна, если форма была в нём
+          const modalWrapper = form.closest("#projectModal");
+          if (modalWrapper) {
+            modalWrapper.style.display = "none";
+          }
+
+          // Открытие окна успеха
+          const successModal = document.getElementById("successModal");
+          if (successModal) {
+            successModal.style.display = "block";
+          }
+
+          form.reset();
+        });
       });
     }
   });

@@ -1086,39 +1086,6 @@
         <img src="img/mobile-im.svg" alt="" class="callback-image-mobile" />
       </div>
     </section>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const form = document.querySelector(".callback-form");
-        const modal = document.getElementById("successModal");
-        const closeBtn = modal.querySelector(".success-close");
-        const okBtn = modal.querySelector(".success-button");
-
-        form.addEventListener("submit", function (e) {
-          e.preventDefault(); // предотвратить отправку формы по умолчанию
-
-          // здесь можно добавить валидацию или отправку данных через fetch/AJAX, если нужно
-
-          modal.style.display = "block"; // показать модальное окно
-          form.reset();
-        });
-
-        function closeModal() {
-          modal.style.display = "none";
-        }
-
-        // Закрытие по кнопке "Хорошо" или иконке "крестик"
-        closeBtn.addEventListener("click", closeModal);
-        okBtn.addEventListener("click", closeModal);
-
-        // Закрытие по клику вне окна
-        modal.addEventListener("click", function (e) {
-          if (e.target === modal) {
-            closeModal();
-          }
-        });
-      });
-    </script>
-
     <footer class="footer" id="contacts">
       <div class="footer-area">
         <div class="footer-about">
