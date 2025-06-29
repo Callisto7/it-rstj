@@ -710,6 +710,23 @@ textarea {
   gap: 56px;
 }
 
+.case-title {
+  cursor: pointer;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* обрезаем до 2 строк */
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+
+.case-title.expanded {
+  -webkit-line-clamp: unset;
+  display: block; /* показываем весь текст */
+}
+
+
+
 .section-title h3 {
   font-size: 46px;
   color: #fff;

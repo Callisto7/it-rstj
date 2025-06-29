@@ -262,5 +262,9 @@
         });
       });
     }
+    /** ===== ОБРЕЗКА ТЕКСТА H3 И РАСКРЫТИЕ ПРИ КЛИКЕ ===== */
+    $(".case-title").on("click", function () {
+      $(this).toggleClass("collapsed").toggleClass("expanded");
+    });
   });
 })(jQuery);
