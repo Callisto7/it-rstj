@@ -293,7 +293,7 @@ hr {
 }
 
 .achievements-item h3 {
-  font-size: 80px;
+  font-size: 72px;
 }
 
 .achievements-items {
@@ -753,8 +753,6 @@ textarea {
 }
 
 .img-gallery {
-  height: 300px;
-  max-height: 380px;
   border-radius: 20px;
   object-fit: cover;
 }

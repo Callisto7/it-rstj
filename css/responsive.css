@@ -53,12 +53,32 @@
   .achievements-item h3 {
     font-size: 48px;
   }
+
+  .achievement-content {
+    flex-direction: column;
+  }
+  .achievements-item {
+    max-width: 100%;
+  }
+
+  .modal-content {
+    background-size: 450px;
+  }
 }
 
 /* tablets */
 @media (max-width: 991px) {
   #pricing-table .title h3 {
     font-size: 14px;
+  }
+  .achievement-content {
+    flex-direction: column;
+  }
+  .modal-content {
+    background-image: none;
+  }
+  .achievements-item {
+    max-width: 100%;
   }
   .achievements-item h3 {
     font-size: 48px;
@@ -512,5 +532,15 @@
 
   .carousel-next {
     display: none;
+  }
+}
+
+@media (min-width: 1199px) and (max-width: 1399px) {
+
+  .achievements-item h3 {
+    font-size: 56px;
+  }
+  .achievements-item p {
+    font-size: 16px;
   }
 }
