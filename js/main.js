@@ -51,11 +51,32 @@
         ...carouselOptions,
         autoplay: true,
         autoplayTimeout: 5000,
+        autoplayHoverPause: false,
       });
 
       $(".carousel-next").on("click", function () {
         const $carousel = $(this).siblings(".owl-carousel");
         $carousel.trigger("next.owl.carousel");
+      });
+
+      // Раскрытие карточек отзывов при наведении + управление autoplay
+      $(".testimonial-card").on("mouseenter", function () {
+        $testimonials.trigger("stop.owl.autoplay");
+
+        $(".testimonial-card").not(this).removeClass("expanded");
+        $(".testimonial-text-card")
+          .not($(this).find(".testimonial-text-card"))
+          .removeClass("expanded");
+
+        $(this).addClass("expanded");
+        $(this).find(".testimonial-text-card").addClass("expanded");
+      });
+
+      $(".testimonial-card").on("mouseleave", function () {
+        $(this).removeClass("expanded");
+        $(this).find(".testimonial-text-card").removeClass("expanded");
+
+        $testimonials.trigger("play.owl.autoplay");
       });
     }
 
@@ -167,29 +188,6 @@
       $(this).setCursorPosition(4);
     });
 
-    /** ===== ОТЗЫВЫ (РАСКРЫТИЕ КАРТОЧЕК) ===== */
-    document.querySelectorAll(".testimonial-card").forEach((card) => {
-      const textCard = card.querySelector(".testimonial-text-card");
-      if (textCard) {
-        textCard.addEventListener("click", () => {
-          document
-            .querySelectorAll(".testimonial-card")
-            .forEach((otherCard) => {
-              if (otherCard !== card) {
-                otherCard.classList.remove("expanded");
-                const otherText = otherCard.querySelector(
-                  ".testimonial-text-card"
-                );
-                otherText?.classList.remove("expanded");
-              }
-            });
-
-          textCard.classList.toggle("expanded");
-          card.classList.toggle("expanded");
-        });
-      }
-    });
-
     /** ===== МОДАЛКИ ===== */
     const modal = document.getElementById("projectModal");
     const successModal = document.getElementById("successModal");
@@ -246,13 +244,11 @@
         form.addEventListener("submit", (e) => {
           e.preventDefault();
 
-          // Закрытие модального окна, если форма была в нём
           const modalWrapper = form.closest("#projectModal");
           if (modalWrapper) {
             modalWrapper.style.display = "none";
           }
 
-          // Открытие окна успеха
           const successModal = document.getElementById("successModal");
           if (successModal) {
             successModal.style.display = "block";
@@ -262,6 +258,7 @@
         });
       });
     }
+
     /** ===== ОБРЕЗКА ТЕКСТА H3 И РАСКРЫТИЕ ПРИ КЛИКЕ ===== */
     $(".case-title").on("click", function () {
       $(this).toggleClass("collapsed").toggleClass("expanded");

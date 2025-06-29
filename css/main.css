@@ -725,8 +725,6 @@ textarea {
   display: block; /* показываем весь текст */
 }
 
-
-
 .section-title h3 {
   font-size: 46px;
   color: #fff;
@@ -1078,18 +1076,23 @@ textarea {
 }
 .testimonial-text-card {
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* кол-во строк по умолчанию */
+  -webkit-line-clamp: 3; /* сколько строк по умолчанию */
   -webkit-box-orient: vertical;
   overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease;
+
+  max-height: 4.5em; /* примерная высота 3 строк, можно адаптировать под шрифт */
+  transition: max-height 0.4s ease;
   position: relative;
 }
+/* При раскрытии */
 .testimonial-text-card.expanded {
   -webkit-line-clamp: unset;
-  max-height: none;
+  max-height: 1000px; /* большое значение */
+  overflow: visible;
 }
 
+/* Убираем градиент после раскрытия */
 .testimonial-text-card.expanded::after {
   content: none;
 }
