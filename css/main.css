@@ -1177,6 +1177,21 @@ label {
 .callback-button {
   background: #fff;
   color: #101010;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.callback-button::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/arrow.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .checkbox-group label {
@@ -1577,7 +1592,8 @@ span {
   font-size: 18px;
 }
 
-.problem-content ul, .solution-content ul {
+.problem-content ul,
+.solution-content ul {
   list-style-type: disc;
   padding-left: 1.5em;
   margin: 0;
@@ -1589,7 +1605,7 @@ span {
 
 .case-gallery-slider img {
   border-radius: 20px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
 }
 
 .results-content h3 {
