@@ -67,8 +67,8 @@ ol {
   padding: 0;
 }
 
-ul li,
-ol li {
+ul,
+ol {
   list-style: none;
 }
 
@@ -1455,4 +1455,126 @@ span {
 .cases-tags {
   display: flex;
   gap: 8px;
+}
+
+/* cases-page */
+
+.cases-area {
+  padding: 130px 0px 0;
+}
+
+.case-container {
+  justify-content: space-between;
+  padding-bottom: 56px;
+}
+
+.case-container,
+.case-section__institution,
+.working-on-project,
+.case-card-category {
+  display: flex;
+}
+
+.case-card,
+.case-section,
+.case-section__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.case-card {
+  max-width: 800px;
+}
+
+.case-section,
+.case-section__institution {
+  gap: 32px;
+}
+
+.case-section__text,
+.working-on-project,
+.case-card-category {
+  gap: 8px;
+}
+
+.case-section__text {
+  max-width: 488px;
+}
+
+.case-card-category span {
+  background-color: #1970ff;
+  padding: 0 16px;
+  color: #fff;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.case-card-title h1 {
+  font-size: 56px;
+}
+
+.case-card-title span {
+  color: #1970ff;
+}
+
+.working-on-project span {
+  border: 1px solid #101010;
+  padding: 0 16px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+.case-head-title h3,
+.case-bottom-description p {
+  font-size: 18px;
+}
+
+.case-partner-logo-image img {
+  border-radius: 20px;
+}
+
+.about-content,
+.problem-content,
+.task-content,
+.technologies-content,
+.solution-content {
+  padding: 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 800px;
+}
+
+.about-content h2,
+.problem-content h2,
+.task-content h2,
+.technologies-content h2,
+.solution-content h2 {
+  font-size: 32px;
+}
+
+.about-content p,
+.task-content p,
+.task-content h3,
+.problem-content h3,
+.solution-content h3,
+.problem-content ul li,
+.technologies-content p {
+  font-size: 18px;
+}
+
+.problem-content ul, .solution-content ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+  margin: 0;
 }
