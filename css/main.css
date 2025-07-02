@@ -1547,7 +1547,8 @@ span {
 .problem-content,
 .task-content,
 .technologies-content,
-.solution-content {
+.solution-content,
+.results-content {
   padding: 24px 0;
   display: flex;
   flex-direction: column;
@@ -1559,7 +1560,8 @@ span {
 .problem-content h2,
 .task-content h2,
 .technologies-content h2,
-.solution-content h2 {
+.solution-content h2,
+.results-content h2 {
   font-size: 32px;
 }
 
@@ -1568,6 +1570,8 @@ span {
 .task-content h3,
 .problem-content h3,
 .solution-content h3,
+.results-content p,
+.results-content b,
 .problem-content ul li,
 .technologies-content p {
   font-size: 18px;
@@ -1577,4 +1581,23 @@ span {
   list-style-type: disc;
   padding-left: 1.5em;
   margin: 0;
+}
+
+.case-gallery-slider {
+  padding: 24px 0;
+}
+
+.case-gallery-slider img {
+  border-radius: 20px;
+  border: 1px solid #EAEAEA;
+}
+
+.results-content h3 {
+  font-size: 22px;
+}
+
+.results-winners {
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
