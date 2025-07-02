@@ -269,7 +269,7 @@
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 0px 15px;
   }
-  #hero-area .contents {
+  #hero-area .contents, .cases-area {
     padding: 110px 0px 0px 0px;
   }
   #hero-area .contents .head-description {
@@ -422,7 +422,8 @@
   .service-header h3,
   .section-title h3,
   #hero-area .contents .head-title,
-  .modal-content h3 {
+  .modal-content h3,
+  .case-card-title h1 {
     font-size: 32px;
   }
   .technology-header p,
@@ -532,6 +533,15 @@
 
   .carousel-next {
     display: none;
+  }
+
+  .case-container {
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 24px;
+  }
+  .case-section__institution {
+    gap: 16px;
   }
 }
 
