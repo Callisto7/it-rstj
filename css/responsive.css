@@ -269,7 +269,8 @@
   .navbar-expand-md .navbar-nav .nav-link {
     padding: 0px 15px;
   }
-  #hero-area .contents, .cases-area {
+  #hero-area .contents,
+  .cases-area {
     padding: 110px 0px 0px 0px;
   }
   #hero-area .contents .head-description {
@@ -543,10 +544,18 @@
   .case-section__institution {
     gap: 16px;
   }
+
+  .our-case-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .content-card span {
+    height: 32px;
+  }
 }
 
 @media (min-width: 1199px) and (max-width: 1399px) {
-
   .achievements-item h3 {
     font-size: 56px;
   }

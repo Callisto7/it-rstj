@@ -1474,7 +1474,8 @@ span {
 
 /* cases-page */
 
-.cases-area {
+.cases-area,
+.our-cases-area {
   padding: 130px 0px 0;
 }
 
@@ -1616,4 +1617,89 @@ span {
   display: flex;
   gap: 16px;
   align-items: center;
+}
+
+/* our-cases */
+
+.our-cases-area h1 {
+  font-size: 45px;
+}
+
+.cases-head,
+.our-cases-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.our-cases-container {
+  gap: 32px;
+  padding-bottom: 80px;
+}
+
+.tag-cases {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tag-cases::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-cases span {
+  background: #eaeaea;
+  color: #5f5f5f;
+  padding: 0 14px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tag-cases span:hover{
+  cursor: pointer;
+}
+
+span.active-tag {
+  background: #101010;
+  color: #fff;
+}
+
+.our-case-card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+  gap: 40px 20px; /* 40px между строками, 20px между колонками */
+}
+
+.our-case-card img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.content-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.content-card h2 {
+  font-size: 24px;
+}
+
+.content-card span {
+  border: 1px solid #101010;
+  padding: 0 14px;
+  height: 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  width: fit-content;
 }
